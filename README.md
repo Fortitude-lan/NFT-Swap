@@ -1,36 +1,54 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Home
 
-## Getting Started
+展示一些 NFT（页面中写死）
 
-First, run the development server:
+## Mint
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+用户可以创建一个 NFT 集合，或者选择现有的 NFT 集合 mint NFT
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Browse
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+浏览所有 NFT
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## List
 
-## Learn More
+能看到所有上架的 NFT，用户可以购买
 
-To learn more about Next.js, take a look at the following resources:
+可选购买方式：
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- a. 使用 Token 原价购买：按照上架的价格购买，直接交易
+- b. 使用 NFT 或 NFT+Token 的方式购买，需要等卖家确认后才能交易
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+购买份额：
+由卖家出售的是整个完整的 NFT 还是一部分 NFT 股份来决定
 
-## Deploy on Vercel
+## Auction
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+拍卖，用户可以出价，必须使用 Token 方式报价
+拍卖时间到后，出价最高者交易成功
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Sell
+
+该页面有两个功能：
+
+1. 可以出售自己的 NFT
+
+   可选出售方式：
+
+   - 指定价格出售
+   - 指定底价和时间，拍卖出售
+
+   可选出售份额：
+
+   - 整个 NFT 出售
+   - 出售一部分 NFT
+
+2. 可以对收到的报价进行接受或拒绝。
+
+## Consolidate
+
+用户可以将自己的多个 NFT 进行合并，合并后的 NFT 可用于交易。
+
+也可以将合并后的 NFT 进行拆分，拆分成原始的 NFT
+
+注意：具有 100%股权的 NFT 才能进行合并和拆分。
