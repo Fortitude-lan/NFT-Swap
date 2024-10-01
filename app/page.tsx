@@ -4,14 +4,18 @@
  * @Author: Hesin
  * @Date: 2024-09-30 16:12:34
  * @LastEditors: Hesin
- * @LastEditTime: 2024-10-01 14:31:51
+ * @LastEditTime: 2024-10-01 16:30:22
  */
-import ConnectButton from "@/components/ConnectButton";
 import Heros from "@/components/Heros";
 import MobilNav from "@/components/MobilNav";
 import Nav from "@/components/Nav";
 import Link from "next/link";
+// import ConnectButton from "@/components/ConnectButton";
+import dynamic from "next/dynamic";
 
+const ConnectButton = dynamic(() => import("@/components/ConnectButton"), {
+  ssr: false,
+});
 export default function Home() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden sm:px-10 px-5">
