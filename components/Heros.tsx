@@ -12,6 +12,7 @@ import { TextGenerateEffect } from "./ui/text-generate-effect";
 import { TracingBeam } from "./ui/tracing-beam";
 import { MagicButton } from "./ui/magic-btn";
 import { FaLocationArrow } from "react-icons/fa6";
+import { HeroList } from "./HeroList";
 
 const Heros = () => {
   return (
@@ -60,6 +61,9 @@ const Heros = () => {
             />
           </div>
         </div>
+
+        {/* NFTs */}
+        <HeroList />
       </div>
     </TracingBeam>
   );
