@@ -1,3 +1,11 @@
+/*
+ * @Descripttion:
+ * @version: 1.0
+ * @Author: Hesin
+ * @Date: 2024-09-30 16:34:40
+ * @LastEditors: Hesin
+ * @LastEditTime: 2024-10-01 11:24:29
+ */
 import React from "react";
 import { Spotlight } from "./ui/spotlight";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
@@ -36,7 +44,7 @@ const Heros = () => {
         </div>
 
         {/* TITLE */}
-        <div className="flex justify-center relative my-20 z-10">
+        <div className="flex justify-center relative my-20 ">
           <div className="max-w-[95vw] md:max-w-2xl  lg:max-w-[60vw]  flex-col items-center">
             <TextGenerateEffect
               className=" font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8"

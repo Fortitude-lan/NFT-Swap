@@ -22,7 +22,7 @@ export default function Home() {
           </h1>
         </Link>
         {/* Nav */}
-        <div className="hidden lg:flex items-center gap-8">
+        <div className="z-50 hidden lg:flex items-center gap-8">
           <Nav />
           {/* RAINBOW */}
           <ConnectButton />
