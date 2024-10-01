@@ -4,10 +4,11 @@
  * @Author: Hesin
  * @Date: 2024-09-30 16:12:34
  * @LastEditors: Hesin
- * @LastEditTime: 2024-09-30 23:23:25
+ * @LastEditTime: 2024-10-01 14:31:51
  */
 import ConnectButton from "@/components/ConnectButton";
 import Heros from "@/components/Heros";
+import MobilNav from "@/components/MobilNav";
 import Nav from "@/components/Nav";
 import Link from "next/link";
 
@@ -26,6 +27,10 @@ export default function Home() {
           <Nav />
           {/* RAINBOW */}
           <ConnectButton />
+        </div>
+        {/* mobile nav */}
+        <div className="lg:hidden ">
+          <MobilNav />
         </div>
       </div>
       <div className="max-w-7xl w-full">
