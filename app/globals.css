@@ -79,6 +79,24 @@
   button {
     @apply active:outline-none;
   }
+
+  @media (max-width: 900px) {
+    .custom-top {
+      top: 3rem;
+    }
+  }
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rotating {
+    animation: rotate 1s linear infinite; /* 调整1s为你想要的旋转速度 */
+  }
 }
 
 @layer utilities {
